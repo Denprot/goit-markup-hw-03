@@ -151,10 +151,9 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    min-width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
-   
 }
 
 .hero-btn {
@@ -171,6 +170,10 @@ body {
     border-radius: 4px;
     margin: 0 auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+
 }
 
 .hero-btn:is(:hover, :focus) {
@@ -255,8 +258,8 @@ body {
 .pictures-subtitle-foto {
     display: flex;
     padding-top: 72px;
-    padding-bottom: 120px;
     gap: 24px;
+    padding-bottom: 120px;
 }
 
 .pictures-subtitle {
