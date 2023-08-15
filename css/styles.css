@@ -357,7 +357,8 @@ body {
 }
 
 .footer-container {
-    padding-top: 101.5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .header-logo-footer {
@@ -369,6 +370,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0,03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-text {
@@ -379,9 +382,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    padding-top: 17.5px;
-    padding-bottom: 100px;
-}
+   }
+
 .basement {
     background: #2E2F42;
 }
