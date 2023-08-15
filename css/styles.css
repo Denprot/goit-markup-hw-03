@@ -250,13 +250,13 @@ body {
 .pictures {
     text-align: center;
     display: flex;
+    padding-bottom: 120px
 }
 
 .pictures-subtitle-foto {
     display: flex;
     padding-top: 72px;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .pictures-subtitle {
