@@ -2,6 +2,21 @@
     --brand-color: #4D5AE5
 }
 
+p, h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -16,16 +31,54 @@ body {
     list-style-type: none;
 }
 
-.visually-hidden {
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;  
+}
 
 /*----header----*/
+.header {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 76px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}        
 
 .header-logo {
     color: var(--brand-color);
@@ -58,6 +111,12 @@ body {
 .header-adress {
     font-style: normal;
 }
+
+.adress {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
  
 .adress-menu {
     color: #434455;  
@@ -77,6 +136,11 @@ body {
     background: #2E2F42;
 }
 
+.hero-container { 
+    padding: 188px 292px;
+    margin: 0 auto;
+}
+
 .hero-title {
     color: #FFF;
     font-size: 56px;
@@ -84,6 +148,11 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
+    min-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+   
 }
 
 .hero-btn {
@@ -96,10 +165,23 @@ body {
     line-height: 1.5; 
     letter-spacing: 0.04em;
     background-color: var(--brand-color);
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
 }
 
 .hero-btn:is(:hover, :focus) {
     background-color: #404BBF;
+}
+
+.some-btn {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 
 .btn-roll {
@@ -112,6 +194,11 @@ body {
     line-height: 1.5; 
     letter-spacing: 0.04em;
     background-color: #F4F4FD;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 24px;
+    height: 48px;
 }
 
 .btn-roll:is(:hover, :focus) {
@@ -122,15 +209,20 @@ body {
 /*----advantages----*/
 
 .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
+    display: flex;
 }
 
 .advantages-list {
-}
-
-.list {
+    display: flex;
+    gap: 24px;
 }
 
 .advantages-item {
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .advantages-subtitle {
@@ -140,6 +232,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-item-text {
@@ -152,6 +245,17 @@ body {
 }
 
 /*----pictures----*/
+.pictures {
+    text-align: center;
+    display: flex;
+}
+
+.pictures-subtitle-foto {
+    display: flex;
+    padding-top: 72px;
+    padding-bottom: 120px;
+    gap: 24px;
+}
 
 .pictures-subtitle {
     color: #2E2F42;
@@ -164,6 +268,11 @@ body {
 }
 
 /*----team----*/
+.team {
+    text-align: center;
+    display: flex;
+    padding-top: 120px;
+}
 
 .team {
     background: var(--cloud, #F4F4FD)
@@ -177,9 +286,12 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 .team-list {
- 
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-item {
@@ -193,6 +305,8 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 
 .team-item-text {
@@ -202,6 +316,16 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
+}
+
+.support-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 48px;
+    column-gap: 24px;
+    padding-bottom: 120px;
 }
 
 .support-list-text {
@@ -211,6 +335,7 @@ body {
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
+    padding: 32px 16px 8px;
 }
 
 .support-btn-text {
@@ -220,9 +345,16 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 0px 16px 32px;
 }
 
 /*----basement----*/
+.basement {
+}
+
+.footer-container {
+    padding-top: 101.5px;
+}
 
 .header-logo-footer {
     color: #f4f4fd;
@@ -241,7 +373,10 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
+    max-width: 264px;
+    padding-top: 17.5px;
+    padding-bottom: 100px;
 }
 .basement {
     background: #2E2F42;
