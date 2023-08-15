@@ -139,7 +139,7 @@ body {
 }
 
 .hero-container { 
-    padding: 188px 292px;
+    padding: 188px 0 188px;
     margin: 0 auto;
 }
 
@@ -214,10 +214,7 @@ body {
 /*----advantages----*/
 
 .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 120px 0 120px;
     display: flex;
 }
 
