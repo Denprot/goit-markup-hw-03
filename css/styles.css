@@ -56,7 +56,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    display: block;
+    display: flex;
     border-bottom: 1px solid #e7e9fc
 }
 
@@ -88,7 +88,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    display: block;
+    display: flex;
 }
 
 .header-logo-accent {
