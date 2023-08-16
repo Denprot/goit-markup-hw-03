@@ -139,7 +139,6 @@ body {
 }
 
 .hero-container { 
-    
     margin: 0 auto;
 }
 
@@ -186,8 +185,6 @@ body {
     justify-content: center;
     margin-bottom: 72px;
     gap: 24px;
-    padding-top: 96px;
-    padding-bottom: 120px;
 }
 
 .btn-roll {
@@ -331,6 +328,11 @@ body {
     letter-spacing: 0.02em;
 }
 
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .container-support {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -343,8 +345,7 @@ body {
     align-content: space-between;
     row-gap: 48px;
     column-gap: 24px;
-    padding-bottom: 120px;
-}
+ }
 
 .support-list-text {
     color: var(--navyblue, #2E2F42);
