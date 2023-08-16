@@ -375,6 +375,9 @@ body {
 }
 
 .footer-container {
+}
+.base {
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -389,8 +392,6 @@ body {
     text-transform: uppercase;
     display: inline-block;
 }
-
-
 
 .footer-text {
     color: #F4F4FD;
